@@ -13,7 +13,7 @@
     <h1>The Awesome Betting Game!</h1>
     <label for="Gamebet">GameBet: </label>
     <input id="Gamebet" name="Gamebet" type="text" placeholder="What's your wager?" />
-    <p class = "validator1"> Please enter a wager between 5 and 10 dollars</p>
+    <p id = "wager-validator"> Please enter a wager between 5 and 10 dollars</p>
     <p class = "validator2"></p>
     <label for="playerGuess">playerGuess: </label>
     <input id="playerGuess" name="playerGuess" type="text" placeholder="Pick a number between 1 and 10" />
@@ -21,9 +21,10 @@
     <input type="button" id="bet" name="submit" value="Submit"/>
     <p class = "answer"></p>
     <p class = "gameresult"></p>
-    <script src=./bower_components/jquery/dist/jquery.js></script>
+    <script src="./bower_components/jquery/dist/jquery.js"></script>
     <script src="twoplayergamerev.js"></script>
 
   </body>
+
 </html>
 
