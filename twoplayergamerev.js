@@ -16,7 +16,7 @@ $(document).ready(function() {
   var game = function(guess, answer, currentBet)  {
     // validations
     if (currentBet > 10 || currentBet < 5) {
-      $('.validator1').text("Wrong bet. Place a bet between 5 and 10");
+      $('.validator1').text("Wrong bet. Place a bet between $5 and $10");
       return;
     }
     if (bankRoll < currentBet) {
@@ -28,13 +28,13 @@ $(document).ready(function() {
       return;
     }
     // calculate result
-    $(".answer").text("The computer answered " + answer);
+    $(".answer").text("The computer answered.... " + answer);
     if (guess == answer) {
       bankRoll += parseInt(currentBet);
-      $('.gameresult').text("you win $ " + currentBet + " and now have $" + bankRoll);
+      $('.gameresult').text("You win $ " + currentBet + " and now have $" + bankRoll);
     } else {
       bankRoll -= currentBet;
-      $('.gameresult').text("you lose $ " + currentBet + " and now have $" + bankRoll);
+      $('.gameresult').text("You lose $ " + currentBet + " and now have $" + bankRoll);
     }
     
   };
