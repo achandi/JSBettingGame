@@ -2,7 +2,8 @@ $(document).ready(function() {
 
   var bankRoll = 100;
 
-  $("#bet").on('click', function() {
+  $("#game_start").on('submit', function(e) {
+    e.preventDefault();
     var bet = $("#Gamebet").val();
     var guess = $("#playerGuess").val();
     game(guess, computerGuess(), bet);

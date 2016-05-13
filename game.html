@@ -6,28 +6,31 @@
    <title>Two player gambling game!</title>
    <link rel="stylesheet" type="text/css" href="gamecss.css">
   
-  </head>
+</head>
 
   <body>
   
     <div id="game">
-    <h1>The Awesome Betting Game!</h1>
-    <h3>You have $100, feeling extremely lucky?</h3>
-    <h5> Pick a number between 1 and 10 and try to double your bet!</h5> 
-    <label for="Gamebet">GameBet: </label>
-    <input id="Gamebet" name="Gamebet" type="text" placeholder="Bet between $5 and $10." />
-    <p class = "validator1"></p>
-    <p class = "validator2"></p>
-    <label for="playerGuess">Player Guess: </label>
-    <input id="playerGuess" name="playerGuess" type="text" placeholder="Between 1 and 10" />
-    <p class = "validator3"></p>
-    <input type="button" id="bet" name="submit" value="Submit"/>
-    <p class = "answer"></p>
-    <p class = "gameresult"></p>
+     <form id="game_start">
+      <h1>The Awesome Betting Game!</h1>
+      <h3>You have $100, feeling extremely lucky?</h3>
+      <h5> Pick a number between 1 and 10 and try to double your bet!</h5> 
+      <label class="lab" for="Gamebet">Game Bet: </label>
+      <input id="Gamebet" name="Gamebet" type="text" placeholder="Between $5 and $10" />
+      <p class = "validator1"></p>
+      <p class = "validator2"></p>
+      <label class = "lab" for="playerGuess">Player Guess: </label>
+      <input id="playerGuess" name="playerGuess" type="text" placeholder="Between 1 and 10" />
+      <p class = "validator3"></p>
+      <input type="submit" id="bet" name="submit" value="Submit"/>
+      <p class = "answer"></p>
+      <p class = "gameresult"></p>
+      <h6>Remember... the house <span id="house">always</span> wins.<h4>
+      </form>
+    </div>
+
     <script src="./bower_components/jquery/dist/jquery.js"></script>
     <script src="twoplayergamerev.js"></script>
-    <h6>Remember... the house <span id="house">always</span> wins.<h4>
-    </div>
 
   </body>
 
