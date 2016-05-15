@@ -1,0 +1,27 @@
+#game {/* height:50px; */width:100%;background-color: rgba(0, 0, 0, 0.34);text-align: center;margin: 0;opacity: 10%;}
+
+
+
+#house {
+
+  font-style: italic;
+
+}
+
+body {background-image: url("betting.jpg");background-repeat:no-repeat;background-position: center top;color: white; background-size: cover; }
+
+.answer {
+
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+
+}
+
+.lab { 
+
+display: inline-block;
+width: 120px;
+
+
+}
